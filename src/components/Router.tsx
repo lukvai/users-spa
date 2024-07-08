@@ -17,7 +17,7 @@ const router = (queryClient: QueryClient) =>
     },
     defaultErrorComponent: ({ error }) => <ErrorComponent error={error} />,
     defaultPreload: 'intent',
-    basepath: import.meta.env.VITE_BASE_PATH
+    basepath: import.meta.env.VITE_BASE_PATH,
     defaultPreloadStaleTime: 0
   })
 
