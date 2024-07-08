@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import { TanStackRouterVite } from '@tanstack/router-vite-plugin'
 
 export default defineConfig(({ command, mode }) => {
-   // @ts-ignore
+  // @ts-ignore
   const env = loadEnv(mode, process.cwd(), '')
   return {
     plugins: [react(), TanStackRouterVite()],

@@ -28,13 +28,16 @@ const UsersSearchInput = ({ searchValue, fullPath }: UsersSearchInputProps) => {
   const debounced = useDebouncedCallback((e) => handleChange(e), 300)
 
   return (
-    <div className="flex items-center">
+    <div className="flex flex-col">
       <input
         defaultValue={searchValue ?? ''}
         onChange={(e) => debounced(e)}
         placeholder="Enter name"
         className="min-w-0 flex-1 border p-1 px-2 rounded"
       />
+      <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+        Please enter at least 3 characters to search for users
+      </p>
     </div>
   )
 }
