@@ -1,5 +1,6 @@
 {
   "name": "users-spa",
+  "homepage": "https://lukvai.github.io/users-spa/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
