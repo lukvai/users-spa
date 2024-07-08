@@ -1,9 +1,12 @@
-import { defineConfig } from 'vite'
+import { defineConfig, loadEnv } from 'vite'
 import react from '@vitejs/plugin-react'
 import { TanStackRouterVite } from '@tanstack/router-vite-plugin'
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react(), TanStackRouterVite()],
-  base: '/users-spa/'
+export default defineConfig(({ command, mode }) => {
+   // @ts-ignore
+  const env = loadEnv(mode, process.cwd(), '')
+  return {
+    plugins: [react(), TanStackRouterVite()],
+    base: env.VITE_BASE_PATH
+  }
 })
