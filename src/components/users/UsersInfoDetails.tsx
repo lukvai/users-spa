@@ -1,11 +1,11 @@
-import { User, UserStatus } from '../../interfaces/User'
+import { User, UserStatus } from '../../interfaces/users/User'
 import { IoChevronDownCircle, IoCloseCircleSharp } from 'react-icons/io5'
 
 interface UsersInfoDetailsProps {
   user: User
 }
 
-const UsersInfoDetails = ({ user }: UsersInfoDetailsProps) => {
+const UsersInfoDetails = ({ user }: UsersInfoDetailsProps): React.JSX.Element => {
   return (
     <div className="overflow-hidden shadow rounded-lg border">
       <div className="px-4 py-5 sm:px-6">

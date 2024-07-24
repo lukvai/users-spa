@@ -6,7 +6,7 @@ interface UsersSearchInputProps {
   fullPath: string
 }
 
-const UsersSearchInput = ({ searchValue, fullPath }: UsersSearchInputProps) => {
+const UsersSearchInput = ({ searchValue, fullPath }: UsersSearchInputProps): React.JSX.Element => {
   const navigate = useNavigate({ from: fullPath })
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {

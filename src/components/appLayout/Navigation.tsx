@@ -1,7 +1,7 @@
 import ThemeButton from './ThemeButton'
 import { Link } from '@tanstack/react-router'
 
-const Navigation = () => {
+const Navigation = (): React.JSX.Element => {
   return (
     <nav className="py-4 bp-1 dark:border-slate-400 border-b">
       <div className="max-w-7xl mx-auto container flex justify-between mx-auto">

@@ -1,4 +1,4 @@
-import { User } from '../../interfaces/User'
+import { User } from '../../interfaces/users/User'
 import { Link } from '@tanstack/react-router'
 import { useDeleteUserMutation } from '../../services/users/hooks'
 
@@ -6,7 +6,7 @@ interface UserListProps {
   users: User[]
 }
 
-const UsersList = ({ users }: UserListProps) => {
+const UsersList = ({ users }: UserListProps): React.JSX.Element => {
   const { mutate, isPending } = useDeleteUserMutation()
 
   return (

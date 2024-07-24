@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { User } from '../../interfaces/User'
+import { User } from '../../interfaces/users/User'
 import UsersInfoEditForm from './UsersInfoEditForm'
 import UsersInfoDetails from './UsersInfoDetails'
 
@@ -7,7 +7,7 @@ interface UsersInfoProps {
   user: User
 }
 
-const UsersInfo = ({ user }: UsersInfoProps) => {
+const UsersInfo = ({ user }: UsersInfoProps): React.JSX.Element => {
   const [isEdit, setIsEdit] = useState<boolean>(false)
 
   return (

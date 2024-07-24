@@ -3,7 +3,7 @@ import { IoMoon, IoSunny } from 'react-icons/io5'
 import { getTheme, isDarkTheme, setTheme } from '../../services/theme'
 import { Theme } from '../../interfaces/Theme'
 
-const ThemeButton = () => {
+const ThemeButton = (): React.JSX.Element => {
   const theme = getTheme()
   setTheme(theme)
   const [isDark, setIsDark] = useState(isDarkTheme())

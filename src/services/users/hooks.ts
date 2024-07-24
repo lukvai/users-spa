@@ -1,5 +1,5 @@
 import { useMutation, useQueryClient } from '@tanstack/react-query'
-import { User } from '../../interfaces/User'
+import { User } from '../../interfaces/users/User'
 import { createUser, deleteUser, updateUser } from './api'
 import toast from 'react-hot-toast'
 import { useNavigate } from '@tanstack/react-router'

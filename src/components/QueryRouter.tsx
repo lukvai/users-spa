@@ -6,7 +6,7 @@ import {
 import Router from './Router'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 
-const QueryRouter = (): JSX.Element => {
+const QueryRouter = (): React.JSX.Element => {
   const queryClient = new QueryClient({
     defaultOptions: {
       queries: {

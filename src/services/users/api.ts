@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { Pagination } from '../../interfaces/Pagination'
-import { User, UserForm } from '../../interfaces/User'
+import { User, UserForm } from '../../interfaces/users/User'
 import {
   createUserEndpoint,
   deleteUserEndpoint,

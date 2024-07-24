@@ -1,6 +1,7 @@
 import React from 'react'
 import Navigation from './Navigation'
 import { Toaster } from 'react-hot-toast'
+import AppLaoder from './AppLoader'
 
 const AppLayout = ({ children }: { children: React.JSX.Element }): React.JSX.Element => {
   return (
@@ -9,7 +10,8 @@ const AppLayout = ({ children }: { children: React.JSX.Element }): React.JSX.Ele
         <Toaster position="top-right" />
       </div>
       <Navigation />
-      <div className="max-w-7xl mx-auto container my-5">{children}</div>
+      <AppLaoder />
+      <div className="max-w-7xl mx-auto container my-5 relative">{children}</div>
     </div>
   )
 }

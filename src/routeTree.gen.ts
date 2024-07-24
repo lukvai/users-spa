@@ -20,22 +20,22 @@ import { Route as UsersUserIdImport } from './routes/users.$userId'
 
 const IndexRoute = IndexImport.update({
   path: '/',
-  getParentRoute: () => rootRoute,
+  getParentRoute: () => rootRoute
 } as any)
 
 const UsersIndexRoute = UsersIndexImport.update({
   path: '/users/',
-  getParentRoute: () => rootRoute,
+  getParentRoute: () => rootRoute
 } as any)
 
 const UsersCreateRoute = UsersCreateImport.update({
   path: '/users/create',
-  getParentRoute: () => rootRoute,
+  getParentRoute: () => rootRoute
 } as any)
 
 const UsersUserIdRoute = UsersUserIdImport.update({
   path: '/users/$userId',
-  getParentRoute: () => rootRoute,
+  getParentRoute: () => rootRoute
 } as any)
 
 // Populate the FileRoutesByPath interface
@@ -79,7 +79,7 @@ export const routeTree = rootRoute.addChildren({
   IndexRoute,
   UsersUserIdRoute,
   UsersCreateRoute,
-  UsersIndexRoute,
+  UsersIndexRoute
 })
 
 /* prettier-ignore-end */
