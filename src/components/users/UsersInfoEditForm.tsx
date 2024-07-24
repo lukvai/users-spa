@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { User, UserGender, UserStatus } from '../../interfaces/users/User'
 import * as z from 'zod'
 import { useForm } from 'react-hook-form'
